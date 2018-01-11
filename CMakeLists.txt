@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.11)
-project(concatenate)
+project(cutting)
 
 # PCL
 set ( OpenCV_DIR   "/home/marcin/opencv-2.4.9/build/")
@@ -36,5 +36,5 @@ if(NOT VTK_BINARY_DIR)
 endif(NOT VTK_BINARY_DIR)
 
 ## Declare and link executable
-add_executable(con source.cpp)
-target_link_libraries(con ${OpenCV_LIBS} ${PCL_LIBRARIES} ${VTK_LIBRARIES})
+add_executable(cut source.cpp)
+target_link_libraries(cut ${OpenCV_LIBS} ${PCL_LIBRARIES} ${VTK_LIBRARIES})
